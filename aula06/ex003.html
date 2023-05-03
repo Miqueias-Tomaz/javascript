@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de JavaScript</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(21, 255, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro documento estudando JavaScript</h1>
+    <p>Estou estudando JavaScript, esta linguagem me parece incrivel!</p>
+
+    <script>
+       var n1 = Number(window.prompt ('digite um número, por favor')) // Existe parseFloat e parseInt, float são para números reais, e Int para números inteiros!
+       var n2 = Number(window.prompt ('digite outro número aqui')) // o comando .prompt recebe os valores em string, caso eu queira um numero preciso transformá-lo
+
+       // apenas Number, o JS já identifica automaticamente
+       // para converter para uma string usas o string()
+
+       var s = n1 + n2
+
+       window.alert (`Resultado: ${n1} + ${n2} = ${s}`)
+    </script>
+</body>
+</html>
