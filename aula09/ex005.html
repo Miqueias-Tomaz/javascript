@@ -16,14 +16,22 @@
 <body>
     <h1 id="tag1">Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
-
+    <div onclick="CliqueEmMim()">Clique em mim</div>
     <script>
         var par = window.document.getElementsByTagName('div')[0]
         var tag = window.document.getElementById('tag1')
         tag.style.background = 'black'
         tag.style.color ='#6d6dbd'
         par.style.background ='blue'
+        var title = window.document.querySelector('h1')
+        title.style.color = 'white'
+        title.innerHTML = 'O titulo foi modificado usando JavaScript, também a cor!'
+        
+        function CliqueEmMim() {
+            var clicou = window.document.querySelector('body')
+
+            clicou.style.background = 'green'
+        }
     </script>
 </body>
 </html>
